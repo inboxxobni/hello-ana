@@ -1,34 +1,25 @@
 {
   "name": "hello-ana",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "The hello-ana Cordis plugin.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inboxxobni/hello-ana.git"
+  },
   "type": "module",
   "exports": {
     ".": "./index.ts",
     "./package.json": "./package.json"
   },
-  "files": [
-    "*.ts",
-    "**/*.ts",
-    "README.md",
-    "cordis.patch.yml"
-  ],
   "peerDependencies": {
     "@deepseek-ai/cordis": "4.0.4"
   },
   "keywords": [
     "cordis",
     "cordis-plugin",
-    "acrylblends",
-    "acryl-package",
-    "dsh-plugin"
+    "acrylblends"
   ],
-  "dsh": {
-    "bundle": {
-      "patch": "./cordis.patch.yml"
-    }
-  },
   "acryl": {
     "schemaVersion": 1,
     "artifacts": {
@@ -38,7 +29,6 @@
     },
     "requires": {
       "host": [
-        "home",
         "router"
       ]
     },
@@ -50,9 +40,5 @@
       "fills": []
     },
     "visibility": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/inboxxobni/hello-ana.git"
   }
 }
